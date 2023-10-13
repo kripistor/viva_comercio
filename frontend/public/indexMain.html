@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Electronics</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/styleBase.css"/>
+    <link rel="stylesheet" href="css/normalize.css"/>
+</head>
+<body>
+<header class="header">
+    <div class="header_width-1140px">
+        <nav class="header__navigation">
+            <div class="header__navigation-geo">
+                <img src="assets/main/img/Vector%201.svg" alt="#"/>
+                <span id="tow">Тверь</span>
+            </div>
+
+            <ul class="header__menu">
+                <li class="header__menu-item"><a href="#">Магазины</a></li>
+                <li class="header__menu-item"><a href="#">Покупателям</a></li>
+                <li class="header__menu-item"><a href="#">Юридическим лицам</a></li>
+                <li class="header__menu-item"><a href="#">Сервисный центр</a></li>
+            </ul>
+            <a href="tel:+74959743333" class="header__navigation-phone"
+            >8 (495) 974-33-33
+            </a>
+        </nav>
+    </div>
+    <div class="hr"></div>
+    <div class="header_width-1140px">
+        <div class="header__bottom">
+            <div class="logo__container">
+                <a href="./indexMain.html" class="logo"
+                ><img src="assets/main/Logo.png" alt="#" class="logo__img"
+                /></a>
+            </div>
+            <div class="geo2 geo"></div>
+            <a href="indexCat.html" class="header__select">
+                <select name="" id="" class="form__select">
+                    <option value="1">Каталог</option>
+                    <option value="2">Телефоны</option>
+                </select>
+            </a>
+
+            <div class="header__search">
+                <input
+                        type="search"
+                        class="header__search-input"
+                        placeholder="Поиск по сайту"
+                />
+                <span class="header__search-icon">
+              <img
+                      src="assets/main/search.svg"
+                      height="20px"
+                      width="20px"
+                      alt="#"
+              />
+            </span>
+            </div>
+
+            <ul class="menu">
+                <li>
+                    <a href="indexSravnit.html" class="header__btns_bottom"
+                    ><img src="assets/main/chart.svg" alt="#"/><span
+                    >Сравнить</span
+                    >
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html" class="header__btns_bottom"
+                    ><img src="assets/main/cart.svg" alt="#"/><span>
+                  <span id="count">0</span>, <span id="sum"> Корзина</span>
+                </span></a
+                    >
+                </li>
+                <li>
+                    <a href="" class="header__btns_bottom"
+                    ><img src="assets/main/exit.svg" alt="#"/><span
+                    >Войти</span
+                    ></a
+                    >
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<div class="container">
+    <div class="main">
+        <div class="main flex">
+            <div class="main__photo">
+                <div class="image fade">
+                    <img src="assets/cart/videocard.png" width="100%"/>
+                </div>
+                <div class="image fade">
+                    <img src="assets/cart/case.png" width="100%"/>
+                </div>
+                <div class="image fade">
+                    <img src="assets/cart/motherboard.png" width="100%"/>
+                </div>
+                <div class="image fade">
+                    <img src="assets/cart/ram.png" width="100%"/>
+                </div>
+                <div class="image fade">
+                    <img src="assets/cart/monitor.png" width="100%"/>
+                </div>
+                <label for="r5" class="arrow-left">
+                    <a id="prev" onclick="show_slide(-1)"></a>
+                </label>
+                <label for="r2" class="arrow-right">
+                    <a id="next" onclick="show_slide(1)"></a>
+                </label>
+
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+
+                <script src="../src/main.js"></script>
+            </div>
+            <!--main__photo-->
+
+            <div class="viewed__wrapper dele">
+                <img
+                        src="assets/cart/videocart.png"
+                        alt="Смартфон"
+                        class="img"
+                        width="200px"
+                        height="100px"
+                />
+                <div class="reviewe__descr">
+                    Видеокарта Palit GeForce RTX 3090 TI <br/>GameRock
+                </div>
+                <div class="coffee-machine">
+                    <img src="assets/cart/star.svg" alt="Рейтинг: 4,5" class="star"/>
+                    <span class="rate">4,5</span>
+                    <span class="feedback"> / 1 отзыв</span>
+                </div>
+                <div class="price">
+                    <div class="past">299 990 ₽</div>
+                    <div class="last">274 999 ₽</div>
+                </div>
+                <div class="contain">
+                    <button
+                            data-id="15"
+                            data-price="274999"
+                            data-title="GeForce RTX 3090"
+                            class="cart"
+                    >
+                        <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                    </button>
+                    <button class="heartt">
+                        <!--<img src="img/heart.png" alt="здесь должен быть лайк">-->
+                    </button>
+                    <button class="statt">
+                        <!--<img src="img/static.png" alt="Здесь должна быть статистика">-->
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--main flex-->
+
+        <h5 class="viewed__title">Популярные товары</h5>
+        <div class="viewed" data-simplebar>
+            <div class="viewed__blocks">
+                <div class="block fade flex">
+                    <div class="viewed__wrapper">
+                        <img src="assets/cart/cofeemachine.png" alt="Кофемашина" class="img"/>
+                        <div class="reviewe__descr">
+                            Кофемашина Philips EP1220/00 Series 1200
+                        </div>
+                        <div class="coffee-machine">
+                            <img src="assets/cart/star.svg" alt="Рейтинг: 4,9" class="star"/>
+                            <span class="rate">4,9</span>
+                            <span class="feedback"> / 4 отзыва</span>
+                        </div>
+                        <div class="price">
+                            <div class="past">37 990</div>
+                            <div class="last">25 990 ₽</div>
+                        </div>
+                        <div class="contain">
+                            <button
+                                    data-id="1"
+                                    data-price="25990"
+                                    data-title="Philips EP1220/00 Series 1200"
+                                    class="cart"
+                            >
+                                <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                            </button>
+                            <button class="heartt">
+                                <!--<img src="img/heart.png" alt="здесь должен быть лайк">-->
+                            </button>
+                            <button class="statt">
+                                <!--<img src="img/static.png" alt="Здесь должна быть статистика">-->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="viewed__wrapper">
+                        <img src="assets/cart/laptop.png" alt="Ноутбук" class="img"/>
+                        <div class="reviewe__descr">
+                            Ноутбук HUAWEI MateBook D 15 BoD-WDH9 8+512GB Space Grey
+                        </div>
+                        <div class="coffee-machine">
+                            <img src="assets/cart/star.svg" alt="Рейтинг: 4,2" class="star"/>
+                            <span class="rate">4,2</span>
+                            <span class="feedback"> / 12 отзывов</span>
+                        </div>
+                        <div class="price">
+                            <div class="past">69 990</div>
+                            <div class="last">63 990 ₽</div>
+                        </div>
+                        <div class="contain">
+                            <button
+                                    data-id="2"
+                                    data-price="63990"
+                                    data-title="HUAWEI MateBook D 15 BoD-WDH9 8+512GB Space Grey"
+                                    class="cart"
+                            >
+                                <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                            </button>
+                            <button class="heartt">
+                                <!--<img src="img/heart.png" alt="здесь должен быть лайк">-->
+                            </button>
+                            <button class="statt">
+                                <!--<img src="img/static.png" alt="Здесь должна быть статистика">-->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="viewed__wrapper">
+                        <img src="assets/cart/smartphone.png" alt="Смартфон" class="img"/>
+                        <div class="reviewe__descr">
+                            Смартфон Apple iPhone 11 128GB Black (MHDH3RU/A)
+                        </div>
+                        <div class="coffee-machine">
+                            <img src="assets/cart/star.svg" alt="Рейтинг: 4,4" class="star"/>
+                            <span class="rate">4,4</span>
+                            <span class="feedback"> / 34 отзыва</span>
+                        </div>
+                        <div class="pricee">
+                            <div class="last">55 990 ₽</div>
+                        </div>
+                        <div class="contain">
+                            <button
+                                    data-id="3"
+                                    data-price="55990"
+                                    data-title="Apple iPhone 11 128GB Black (MHDH3RU/A)"
+                                    class="cart"
+                            >
+                                <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                            </button>
+                            <button class="heartt">
+                                <!--<img src="img/heart.png" alt="здесь должен быть лайк">-->
+                            </button>
+                            <button class="statt">
+                                <!--<img src="img/static.png" alt="Здесь должна быть статистика">-->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="viewed__wrapper">
+                        <img src="assets/cart/phone.png" alt="Смартфон" class="img"/>
+                        <div class="reviewe__descr">
+                            Смартфон POCO X3&nbsp;Pro 256GB Phantom Black
+                        </div>
+                        <div class="coffee-machine">
+                            <img src="assets/cart/star.svg" alt="Рейтинг: 4,5" class="star"/>
+                            <span class="rate">4,5</span>
+                            <span class="feedback"> / 22 отзыва</span>
+                        </div>
+                        <div class="price">
+                            <div class="past">26 990</div>
+                            <div class="last">24 990 ₽</div>
+                        </div>
+                        <div class="contain">
+                            <button
+                                    data-id="4"
+                                    data-price="24990"
+                                    data-title="POCO X3 Pro 256GB Phantom Black"
+                                    class="cart"
+                            >
+                                <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                            </button>
+                            <button class="heartt">
+                                <!--<img src="img/heart.png" alt="здесь должен быть лайк">-->
+                            </button>
+                            <button class="statt">
+                                <!--<img src="img/static.png" alt="Здесь должна быть статистика">-->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="block fade flex">
+                    <div class="viewed__wrapper">
+                        <img src="assets/cart/macbook.png" alt="Смартфон" class="img slid2"/>
+                        <div class="reviewe__descr">
+                            Ноутбук Apple MacBook Air 13 M2 8/256GB Space Grey
+                        </div>
+                        <div class="coffee-machine">
+                            <img src="assets/cart/star.svg" alt="Рейтинг: 4,5" class="star"/>
+                            <span class="rate">5,0</span>
+                            <span class="feedback"> / 12 отзывов</span>
+                        </div>
+                        <div class="price">
+                            <div class="past">139 999 ₽</div>
+                            <div class="last">101 999 ₽</div>
+                        </div>
+                        <div class="contain">
+                            <button
+                                    data-id="5"
+                                    data-price="101999"
+                                    data-title="Apple MacBook Air 13 M2 8/256GB Space Grey"
+                                    class="cart"
+                            >
+                                <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                            </button>
+                            <button class="heartt">
+                                <!--<img src="img/heart.png" alt="здесь должен быть лайк">-->
+                            </button>
+                            <button class="statt">
+                                <!--<img src="img/static.png" alt="Здесь должна быть статистика">-->
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="viewed__wrapper">
+                        <img src="assets/cart/tv.png" alt="Смартфон" class="img slid2"/>
+                        <div class="reviewe__descr">Телевизор Philips 43PUS7406/60</div>
+                        <div class="coffee-machine">
+                            <img src="assets/cart/star.svg" alt="Рейтинг: 4,5" class="star"/>
+                            <span class="rate">4,1</span>
+                            <span class="feedback"> / 41 отзыв</span>
+                        </div>
+                        <div class="price">
+                            <div class="past">39 999 ₽</div>
+                            <div class="last">29 999 ₽</div>
+                        </div>
+                        <div class="contain">
+                            <button
+                                    data-id="6"
+                                    data-price="29999"
+                                    data-title="Philips 43PUS7406/60"
+                                    class="cart"
+                            >
+                                <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                            </button>
+                            <button class="heartt">
+                                <!--<img src="img/heart.png" alt="здесь должен быть лайк">-->
+                            </button>
+                            <button class="statt">
+                                <!--<img src="img/static.png" alt="Здесь должна быть статистика">-->
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="viewed__wrapper">
+                        <img src="assets/cart/ps.png" alt="Смартфон" class="img slid2"/>
+                        <div class="reviewe__descr">
+                            Беспроводной контроллер PlayStation 5 DualSense Midnight Black
+                        </div>
+                        <div class="coffee-machine">
+                            <img src="assets/cart/star.svg" alt="Рейтинг: 4,5" class="star"/>
+                            <span class="rate">5,0</span>
+                            <span class="feedback"> / 7 отзывов</span>
+                        </div>
+                        <div class="price">
+                            <div class="last">6 799 ₽</div>
+                        </div>
+                        <div class="contain">
+                            <button
+                                    data-id="7"
+                                    data-price="6799"
+                                    data-title="PlayStation 5 DualSense Midnight Black"
+                                    class="cart"
+                            >
+                                <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                            </button>
+                            <button class="heartt">
+                                <!--<img src="img/heart.png" alt="здесь должен быть лайк">-->
+                            </button>
+                            <button class="statt">
+                                <!--<img src="img/static.png" alt="Здесь должна быть статистика">-->
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <script src="../src/appp.js"></script>
+
+                <label for="r5" class="left-arrow">
+                    <a id="prev" onclick="showw_slide(-1)"></a>
+                </label>
+                <label for="r2" class="right--arrow">
+                    <a id="next" onclick="showw_slide(1)"></a>
+                </label>
+                <script src="../src/slider.js"></script>
+            </div>
+        </div>
+
+        <div class="brands">
+            <h5 class="brands__title">Бренды</h5>
+            <div class="brands__top flex">
+                <div class="brands__top-img">
+                    <img src="assets/cart/apple.jpg" alt="image" class="img img-brands"/>
+                </div>
+                <div class="brands__top-img">
+                    <img src="assets/cart/samsung.png" alt="image" class="img img-brands"/>
+                </div>
+                <div class="brands__top-img">
+                    <img src="assets/cart/huawei.png" alt="image" class="img img-brands"/>
+                </div>
+                <div class="brands__top-img">
+                    <img src="assets/cart/AMD.png" alt="image" class="img img-brands"/>
+                </div>
+                <div class="brands__top-img">
+                    <img src="assets/cart/braun.png" alt="image" class="img img-brands"/>
+                </div>
+                <div class="brands__top-img">
+                    <img src="assets/cart/tefal.png" alt="image" class="img img-brands"/>
+                </div>
+            </div>
+            <div class="brands__bottom flex">
+                <div class="brands__bottom-img">
+                    <img src="assets/cart/honor.png" alt="image" class="img img-brands"/>
+                </div>
+                <div class="brands__bottom-img">
+                    <img src="assets/cart/dyson.png" alt="image" class="img img-brands"/>
+                </div>
+                <div class="brands__bottom-img">
+                    <img src="assets/cart/hyperx.jpg" alt="image" class="img img-brands"/>
+                </div>
+                <div class="brands__bottom-img">
+                    <img src="assets/cart/msi.png" alt="image" class="img img-brands"/>
+                </div>
+                <div class="brands__bottom-img">
+                    <img src="assets/cart/asus.png" alt="image" class="img img-brands"/>
+                </div>
+                <div class="brands__bottom-img">
+                    <img src="assets/cart/intel.png" alt="image" class="img img-brands"/>
+                </div>
+            </div>
+        </div>
+        <!--Brands-->
+
+        <div class="now">
+            <h5 class="viewed__title">Успей сейчас</h5>
+
+            <div class="now" data-simplebar>
+                <div class="now__blocks">
+                    <div class="blockk fadee flex">
+                        <div class="now__wrapper">
+                            <img src="assets/cart/mac_1.png" alt="Кофемашина" class="now-img"/>
+                            <div class="now__descr">
+                                Ноутбук Aplle MacBook Pro 13 M1 8-core(8-core GPU)/8/256
+                                Space Gray
+                            </div>
+                            <div class="notebook">
+                                <img
+                                        src="assets/cart/star.svg"
+                                        alt="Рейтинг: 4,4"
+                                        class="starr"
+                                />
+                                <span class="ratee">4,4</span>
+                                <span class="feedbackk"> / 2 отзыва</span>
+                            </div>
+                            <div class="pricee">
+                                <div class="past">119 990</div>
+                                <div class="last">87 990 ₽</div>
+                            </div>
+                            <div class="containn">
+                                <button
+                                        data-id="8"
+                                        data-price="87990"
+                                        data-title="Aplle MacBook Pro 13 M1 8-core"
+                                        class="cart"
+                                >
+                                    <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                                </button>
+                                <button class="heartt"></button>
+                                <button class="statt"></button>
+                            </div>
+                        </div>
+                        <div class="now__wrapper">
+                            <img src="assets/cart/airpods.jpg" alt="Ноутбук" class="now-img"/>
+                            <div class="now__descr">
+                                Беспроводные наушники с микрофоном Apple AirPods 3-го
+                                поколения
+                            </div>
+                            <div class="notebook">
+                                <img
+                                        src="assets/cart/star.svg"
+                                        alt="Рейтинг: 4,7"
+                                        class="starr"
+                                />
+                                <span class="ratee">4,7</span>
+                                <span class="feedbackk"> / 44 отзыва</span>
+                            </div>
+                            <div class="pricee">
+                                <div class="past">16 990</div>
+                                <div class="last">12 990 ₽</div>
+                            </div>
+                            <div class="containn">
+                                <button
+                                        data-id="9"
+                                        data-price="12990"
+                                        data-title="Apple AirPods 3"
+                                        class="cart"
+                                >
+                                    <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                                </button>
+                                <button class="heartt"></button>
+                                <button class="statt"></button>
+                            </div>
+                        </div>
+                        <div class="now__wrapper">
+                            <img src="assets/cart/cyberpunk.png" alt="Смартфон" class="now-img"/>
+                            <div class="now__descr">
+                                Игра для PS4 CD-PROJEKT-RED Cyperpunk 2077
+                            </div>
+                            <div class="notebook">
+                                <img
+                                        src="assets/cart/star.svg"
+                                        alt="Рейтинг: 3,9"
+                                        class="starr"
+                                />
+                                <span class="ratee">3,9</span>
+                                <span class="feedbackk"> / 106 отзывов</span>
+                            </div>
+                            <div class="pricee">
+                                <div class="past">2 799</div>
+                                <div class="last">799 ₽</div>
+                            </div>
+                            <div class="containn">
+                                <button
+                                        data-id="10"
+                                        data-price="799"
+                                        data-title="Cyperpunk 2077"
+                                        class="cart"
+                                >
+                                    <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                                </button>
+                                <button class="heartt"></button>
+                                <button class="statt"></button>
+                            </div>
+                        </div>
+                        <div class="now__wrapper wrap">
+                            <img
+                                    src="assets/cart/xiaomitel_1.png"
+                                    alt="Смартфон"
+                                    class="now-img"
+                            />
+                            <div class="now__descr">
+                                Смартфон Xiaomi 11 Lite 5G NE 256GB Peach Pink
+                            </div>
+                            <div class="notebook">
+                                <img
+                                        src="assets/cart/star.svg"
+                                        alt="Рейтинг: 4,5"
+                                        class="starr"
+                                />
+                                <span class="ratee">4,5</span>
+                                <span class="feedbackk"> / 22 отзыва</span>
+                            </div>
+                            <div class="pricee">
+                                <div class="past">39 990</div>
+                                <div class="last">34 990 ₽</div>
+                            </div>
+                            <div class="containn">
+                                <button
+                                        data-id="11"
+                                        data-price="34990"
+                                        data-title="Xiaomi 11 Lite 5G NE 256GB Peach Pink"
+                                        class="cart"
+                                >
+                                    <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                                </button>
+                                <button class="heartt"></button>
+                                <button class="statt"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blockk fadee flex">
+                        <div class="now__wrapper">
+                            <img
+                                    src="assets/cart/gorenje.png"
+                                    alt="Смартфон"
+                                    class="now-img slid22"
+                            />
+                            <div class="now__descr">
+                                Стиральная машина Gorenje W1HP60SF
+                            </div>
+                            <div class="notebook">
+                                <img
+                                        src="assets/cart/star.svg"
+                                        alt="Рейтинг: 3,8"
+                                        class="starr"
+                                />
+                                <span class="ratee">3,8</span>
+                                <span class="feedbackk"> / 11 отзывов</span>
+                            </div>
+                            <div class="pricee">
+                                <div class="past">29 999 ₽</div>
+                                <div class="last">25 999 ₽</div>
+                            </div>
+                            <div class="containn">
+                                <button
+                                        data-id="12"
+                                        data-price="25999"
+                                        data-title="Gorenje W1HP60SF"
+                                        class="cart"
+                                >
+                                    <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                                </button>
+                                <button class="heartt"></button>
+                                <button class="statt"></button>
+                            </div>
+                        </div>
+
+                        <div class="now__wrapper">
+                            <img
+                                    src="assets/cart/dyson-ph_1.png"
+                                    alt="Смартфон"
+                                    class="now-img slid22"
+                            />
+                            <div class="now__descr">
+                                Пылесос ручной Dyson V8 Absolute SV25 Silver/Nickel
+                            </div>
+                            <div class="notebook">
+                                <img
+                                        src="assets/cart/star.svg"
+                                        alt="Рейтинг: 4,1"
+                                        class="starr"
+                                />
+                                <span class="ratee">4,1</span>
+                                <span class="feedbackk"> / 1 отзыв</span>
+                            </div>
+                            <div class="pricee">
+                                <div class="last">49 999 ₽</div>
+                            </div>
+                            <div class="containn">
+                                <button
+                                        data-id="13"
+                                        data-price="49999"
+                                        data-title="Dyson V8 Absolute SV25 Silver/Nickel"
+                                        class="cart"
+                                >
+                                    <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                                </button>
+                                <button class="heartt"></button>
+                                <button class="statt"></button>
+                            </div>
+                        </div>
+
+                        <div class="now__wrapper">
+                            <img
+                                    src="assets/cart/candy.png"
+                                    alt="Смартфон"
+                                    class="now-img slid22"
+                            />
+                            <div class="now__descr">Холодильник Candy CCRN 6180W</div>
+                            <div class="notebook">
+                                <img
+                                        src="assets/cart/star.svg"
+                                        alt="Рейтинг: 4,6"
+                                        class="starr"
+                                />
+                                <span class="ratee">4,6</span>
+                                <span class="feedbackk"> / 59 отзывов</span>
+                            </div>
+                            <div class="pricee">
+                                <div class="past">42 199 ₽</div>
+                                <div class="last">33 999 ₽</div>
+                            </div>
+                            <div class="containn">
+                                <button
+                                        data-id="14"
+                                        data-price="33999"
+                                        data-title="Candy CCRN 6180W"
+                                        class="cart"
+                                >
+                                    <img src="assets/cart/cart.png" alt="Добавить в корзину"/>
+                                </button>
+                                <button class="heartt"></button>
+                                <button class="statt"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <script src="../src/app.js"></script>
+
+                    <label for="r6" class="l-arrow">
+                        <a id="prevv" onclick="showww_slide(-1)"></a>
+                    </label>
+                    <label for="r3" class="r-arrow">
+                        <a id="nextt" onclick="showww_slide(1)"></a>
+                    </label>
+                    <script src="../src/slider2.js"></script>
+                </div>
+            </div>
+            <!--Успей сейчас-->
+        </div>
+        <!--main-->
+    </div>
+</div>
+<!--Container-->
+
+<footer class="footer">
+    <div class="footer__container">
+        <div class="logo-div">
+            <a href="" class="logo"
+            ><img src="assets/main/Logo.png" alt="#" class="logo__img"
+            /></a>
+        </div>
+        <div class="footer__container-flex">
+            <div class="footer__tabs">
+                <div class="footer__tabs-header">
+                    <div class="footer__tabs-header-item">
+                        <p class="footer__tabs-header-text">О Компании</p>
+                        <!-- <img src="img/arrdown2.svg" alt="#" /> -->
+                    </div>
+                    <div class="footer__tabs-header-item">
+                        <p class="footer__tabs-header-text">Покупателям</p>
+                        <!-- <img src="img/arrdown2.svg" alt="#" /> -->
+                    </div>
+                </div>
+                <div class="footer__tabs-body">
+                    <div class="footer__tabs-body-item">
+                        <div class="footer__tabs-body-item">
+                            <p>Про ELECTRONICS</p>
+                            <p>Новости</p>
+                            <p>Партнерам</p>
+                            <p>Вакансии</p>
+                            <p>Политика конфиденциальности</p>
+                            <p>Персональные данные</p>
+                            <p>Правила продаж</p>
+                            <p>Сервисные центры</p>
+                        </div>
+                    </div>
+                    <div class="footer__tabs-body-item flex">
+                        <div class="footer__tabs-body-item-container_1">
+                            <p>Как оформить заказ</p>
+                            <p>Способы оплаты</p>
+                            <p>Кредиты</p>
+                            <p>Доставка</p>
+                            <p>Статус заказа</p>
+                            <p>Обмен, возврат, гарантия</p>
+                            <p>Проверка статуса ремонта</p>
+                        </div>
+                        <div class="footer__tabs-body-item-container_2">
+                            <p>Юридическим лицам</p>
+                            <p>Проверка счета</p>
+                            <p>Корпоративные отделы</p>
+                            <p>Подарочные карты</p>
+                            <p>Бонусная программа</p>
+                            <p>Помощь</p>
+                            <p>Обратная связь</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__container-social">
+                <div class="footer__container-social-text">Мы в соцсетях</div>
+                <div class="footer__container-social-btns">
+                    <div class="footer__container-social-btn">
+                        <a href=""><img src="assets/main/facebook.svg" alt="#"/></a>
+                    </div>
+                    <div class="footer__container-social-btn">
+                        <a href=""><img src="assets/main/twit.svg" alt="#"/></a>
+                    </div>
+                    <div class="footer__container-social-btn">
+                        <a href=""
+                        ><img
+                                class="img-width-22px"
+                                src="assets/main/inst.svg"
+                                alt="#"
+                        /></a>
+                    </div>
+                    <div class="footer__container-social-btn">
+                        <a href=""><img src="assets/main/vk.svg" alt="#"/></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__container-2">
+        <div class="footer__container-2-copy">
+            <p>Copyright 2022</p>
+        </div>
+        <div class="footer__container-2-text">
+            <a href="">Политика конфиденциальности</a
+            ><a href="">Публичная оферта</a><a href="">Карта сайта</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
