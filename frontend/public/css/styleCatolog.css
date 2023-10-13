@@ -16,7 +16,7 @@ main {
     width: 20px;
     height: 20px;
     border: none;
-    background: url(/img/search.png) no-repeat;
+    background: url(../assets/catolog/search.png) no-repeat;
     cursor: pointer;
     position: absolute;
     top: 80px;
@@ -24,7 +24,7 @@ main {
 }
 
 .search button:hover {
-    background: url(/img/search_active.png) no-repeat;
+    background: url(../assets/catolog/search_active.png) no-repeat;
     transition: 0.5s;
 }
 
@@ -486,7 +486,7 @@ select {
     margin-top: 20px;
 }
 
-.add_korzina {
+.add_cart {
     width: 80px;
     height: 40px;
     background-color: #f05757;
@@ -495,11 +495,11 @@ select {
     background-image: url("../assets/catolog/cart.png") no-repeat;
 }
 
-.add_korzina:hover {
+.add_cart:hover {
     background-color: red;
 }
 
-.like_tovar {
+.like_item {
     padding: 0;
     padding-top: 4px;
     background: none;
@@ -508,35 +508,35 @@ select {
     height: 30px;
 }
 
-.like_tovar:hover {
+.like_item:hover {
     background-color: #c5c5c7;
     border-radius: 50px;
 }
 
-.like_tovar:active {
+.like_item:active {
     background-color: #f05757;
     border-radius: 50px;
     transition: 0.1s;
 }
 
-.like_tovar:focus {
+.like_item:focus {
     background-color: #f05757;
     border-radius: 50px;
 }
 
-.sravnen_tovara {
+.compare_item {
     background: none;
     border: none;
     width: 30px;
     height: 30px;
 }
 
-.sravnen_tovara:hover {
+.compare_item:hover {
     background-color: #c5c5c7;
     border-radius: 50px;
 }
 
-#more_tovar_btn {
+#more_item_btn {
     margin-left: 20px;
     max-width: 835px;
     width: 100%;
@@ -553,17 +553,17 @@ select {
     height: 50px;
 }
 
-#more_tovar_btn:hover {
+#more_item_btn:hover {
     background-color: #1e2022;
     border: none;
     color: #fff;
 }
 
-#dots_tovar {
+#dots_item {
     display: none;
 }
 
-#more_tovar {
+#more_item {
     margin-top: 0px;
     display: none;
     flex-direction: column;
@@ -931,7 +931,7 @@ button {
 }
 
 .btnAfter::before {
-    content: url("./img/strel.svg");
+    content: url("../assets/main/arrdown.svg");
     position: absolute;
     top: -40%;
     left: -15px;
@@ -944,7 +944,7 @@ button {
 }
 
 .btnAfter.active:before {
-    content: url("./img/strel2.svg");
+    content: url("../assets/main/arrdown2.svg");
     position: absolute;
     top: -40%;
     left: -15px;
@@ -1577,7 +1577,7 @@ button {
         margin-left: 10px;
     }
 
-    #more_tovar_btn {
+    #more_item_btn {
         width: 300px;
         margin-left: -15px;
     }
