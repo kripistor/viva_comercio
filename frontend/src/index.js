@@ -86,3 +86,43 @@ function calcCartPrice() {
     const numbFmt = priceTotal.toLocaleString("ru-RU");
     totalPriceEl.innerText = numbFmt + " ₽";
 }
+
+fetch('http://127.0.0.1:8000/cart')
+    .then(response => response.json())
+    .then(data => {
+        const cartSection = document.querySelector('.myCart .iphoneCards');
+        data.products.forEach(product => {
+            console.log(product.price);
+            const templateBlock = `
+                <div class="iphone__block" id="${product.id}">
+                    <div class="blockCard">
+                        <img src="${product.image}" alt="" width="90" height="66"/>
+                        <span class="leftCard">
+                            <div class="cardName">
+                                ${product.name}
+                            </div>
+                            <span class="btnCard">
+                                <button id="fav">В избранное</button>
+                                <button id="del" class="del">Удалить</button>
+                            </span>
+                        </span>
+                        <span class="rightCard">
+                            <div class="cardPrice">${product.price} ₽</div>
+                            <div class="btnAmount">
+                                <button class="btnMinus">
+                                    <div class="minusItem" data-action="minus">-</div>
+                                </button>
+                                <span class="itemAmount" data-counter>1</span>
+                                <button class="btnPluse">
+                                    <div class="pluseItem" data-action="plus">+</div>
+                                </button>
+                            </div>
+                        </span>
+                    </div>
+                </div>
+            `;
+            cartSection.insertAdjacentHTML('beforeend', templateBlock);
+        });
+    })
+    .catch(error => console.error('Ошибка получения данных:', error));
+

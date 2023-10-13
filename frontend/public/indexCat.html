@@ -459,7 +459,7 @@
             </div>
 
             <div class="content__tovar">
-                <div class="tovar__block">
+                <div class="tovar__block" data-product-id="1">
                     <img
                             class="photo_tovara"
                             src="https://img.mvideo.ru/Big/30065447bb.jpg"
@@ -472,13 +472,14 @@
                         <img src="assets/catolog/Star.png" alt=""/>
                         <a href="" class="otziv_cifra">4.8</a>
                         <a href="" class="otziv_kolvo"> / 47 отзывов</a>
+
                     </div>
                     <div class="cena_tovara">
                         <a class="old_cena">79 999</a>
                         <a class="new_cena">69 999 ₽</a>
                     </div>
                     <div class="block_korzina">
-                        <button class="add_cart">
+                        <button class="add_cart" data-product-id="1">
                             <img src="assets/catolog/cart.png" alt=""/>
                         </button>
                         <button class="like_item">
@@ -1125,6 +1126,32 @@
         </div>
     </div>
 </footer>
+<script>
+const addButtons = document.querySelectorAll('.add_cart');
+
+addButtons.forEach(addButton => {
+    addButton.addEventListener('click', async function(event) {
+        event.preventDefault();
+
+         const productID = parseInt(addButton.closest('.tovar__block').getAttribute('data-product-id'));
+
+        try {
+            const response = await fetch(`http://127.0.0.1:8000/cart?product_id=${productID}`, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+            });
+            const data = await response.json();
+            console.log('Success:', data);
+        } catch (error) {
+            console.error('Error:', error);
+        }
+    });
+});
+</script>
+
+
 
 <script>
     function moretovar() {
