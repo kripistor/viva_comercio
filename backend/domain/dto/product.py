@@ -6,3 +6,6 @@ class ProductDTO(DTO):
     name: str
     price: int
     image: str
+    old_price: int
+    review: float
+    review_count: int

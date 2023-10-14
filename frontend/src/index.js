@@ -138,7 +138,6 @@ fetch('http://127.0.0.1:8000/cart')
     .then(data => {
         const cartSection = document.querySelector('.myCart .iphoneCards');
         data.products.forEach(product => {
-            console.log(product.price);
             const templateBlock = `
                 <div class="iphone__block" id="${product.id}">
                     <div class="blockCard">
