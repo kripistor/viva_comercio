@@ -8,3 +8,4 @@ class Cart(Base):
     __tablename__ = "cart"
     id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True)
     product_id: Mapped[int] = mapped_column(Integer, nullable=False)
+    count: Mapped[int] = mapped_column(Integer, nullable=False, default=1)

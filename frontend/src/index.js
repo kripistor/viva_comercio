@@ -16,42 +16,29 @@ function boxHandler(e) {
     }
 }
 
-//счетчик товаров
-window.addEventListener("click", function (event) {
-    console.log("click window");
-    console.log(event.target.dataset.action);
-
-    if (event.target.dataset.action === "plus") {
-        const btnAmount = event.target.closest(".btnAmount");
-
-        const counter = btnAmount.querySelector("[data-counter]");
-
-        const amount = document.querySelector("[data-amount]");
-
-        counter.innerText = ++counter.innerText;
-    }
-
-    if (event.target.dataset.action === "minus") {
-        const btnAmount = event.target.closest(".btnAmount");
-
-        const counter = btnAmount.querySelector("[data-counter]");
-        if (counter.innerText == 1) {
-            if (confirm("Удалить из корзины?")) {
-                event.target.closest(".iphone__block").remove();
-                toggleCartStatus();
-                calcCartPrice();
-            } else {
-                counter.innerText = counter.innerText;
-            }
-            // event.target.closest(".iphone__block").remove();
-        } else {
-            counter.innerText = --counter.innerText;
+const cartSection = document.querySelector('.myCart .iphoneCards');
+cartSection.addEventListener('click', async function(event) {
+    if (event.target.classList.contains('del')) {
+        event.preventDefault();
+        const deleteButton = event.target;
+        const productID = deleteButton.closest('.iphone__block').id;
+        try {
+            const response = await fetch(`http://127.0.0.1:8000/cart?product_id=${productID}`, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+            });
+            const data = await response.json();
+            console.log('Success:', data);
+            // Удалите элемент из DOM или обновите его, чтобы он больше не отображался
+            deleteButton.closest('.iphone__block').remove();
+        } catch (error) {
+            console.error('Error:', error);
         }
     }
-    calcCartPrice();
 });
 
-// пустая корзина
 function toggleCartStatus() {
     const cartWrapper = document.querySelector(".myCart");
     const cartEmptyBadge = document.querySelector("[data-cart-empty]");
@@ -86,6 +73,65 @@ function calcCartPrice() {
     const numbFmt = priceTotal.toLocaleString("ru-RU");
     totalPriceEl.innerText = numbFmt + " ₽";
 }
+function increaseCartItem(productID) {
+    fetch(`http://127.0.0.1:8000/cart/increase?product_id=${productID}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        console.log('Increased item count in cart:', response);
+    })
+    .catch(error => console.error('Error increasing item count:', error));
+}
+
+function decreaseCartItem(productID) {
+    fetch(`http://127.0.0.1:8000/cart/decrease?product_id=${productID}`, {
+        method: 'PUT',
+        headers: {
+            'Content-Type': 'application/json'
+        }
+    })
+    .then(response => {
+        console.log('Decreased item count in cart:', response);
+    })
+    .catch(error => console.error('Error decreasing item count:', error));
+}
+window.addEventListener("click", function (event) {
+    console.log("click window");
+    console.log(event.target.dataset.action);
+
+    if (event.target.dataset.action === "plus") {
+        const btnAmount = event.target.closest(".btnAmount");
+        const counter = btnAmount.querySelector("[data-counter]");
+        counter.innerText = ++counter.innerText;
+
+        const productID = event.target.closest('.iphone__block').id; // Получить ID товара
+        increaseCartItem(productID); // Вызвать функцию увеличения количества товара
+    }
+
+    if (event.target.dataset.action === "minus") {
+        const btnAmount = event.target.closest(".btnAmount");
+        const counter = btnAmount.querySelector("[data-counter]");
+        if (counter.innerText == 1) {
+            if (confirm("Удалить из корзины?")) {
+                const productID = event.target.closest('.iphone__block').id; // Получить ID товара
+                decreaseCartItem(productID); // Вызвать функцию уменьшения количества товара
+                event.target.closest(".iphone__block").remove();
+                toggleCartStatus();
+                calcCartPrice();
+            } else {
+                counter.innerText = counter.innerText;
+            }
+        } else {
+            counter.innerText = --counter.innerText;
+            const productID = event.target.closest('.iphone__block').id; // Получить ID товара
+            decreaseCartItem(productID); // Вызвать функцию уменьшения количества товара
+        }
+    }
+    calcCartPrice();
+});
 
 fetch('http://127.0.0.1:8000/cart')
     .then(response => response.json())
@@ -112,7 +158,7 @@ fetch('http://127.0.0.1:8000/cart')
                                 <button class="btnMinus">
                                     <div class="minusItem" data-action="minus">-</div>
                                 </button>
-                                <span class="itemAmount" data-counter>1</span>
+                                <span class="itemAmount" data-counter>${product.count}</span>
                                 <button class="btnPluse">
                                     <div class="pluseItem" data-action="plus">+</div>
                                 </button>
