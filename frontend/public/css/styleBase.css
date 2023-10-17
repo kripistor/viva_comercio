@@ -626,10 +626,6 @@ header {
     font-weight: 400;
     font-size: 14px;
     line-height: 130%;
-    /* or 18px */
-
-    /* Black */
-
     color: #1e2022;
     margin-bottom: 20px;
 }
@@ -645,14 +641,12 @@ header {
     font-weight: 700;
     font-size: 14px;
     line-height: 130%;
-    /* or 18px */
-
-    /* Black */
-
     color: #1e2022;
     margin-bottom: 30px;
+}
 
-    margin-left: 40px;
+.rightCard {
+    margin-left: 100px;
 }
 
 .blockCard img {
@@ -901,6 +895,11 @@ button {
 .iphone__block {
     margin-bottom: 40px;
 }
+
+.iphoneCards {
+    align-items: end;
+}
+
 
 .first-line {
     display: flex;

@@ -132,7 +132,6 @@ window.addEventListener("click", function (event) {
     }
     calcCartPrice();
 });
-
 fetch('http://127.0.0.1:8000/cart')
     .then(response => response.json())
     .then(data => {
@@ -167,6 +166,7 @@ fetch('http://127.0.0.1:8000/cart')
                 </div>
             `;
             cartSection.insertAdjacentHTML('beforeend', templateBlock);
+            calcCartPrice();
         });
     })
     .catch(error => console.error('Ошибка получения данных:', error));
