@@ -1,6 +1,6 @@
 body {
-    margin: 0px;
-    font-family: Roboto;
+    margin: 0;
+    font-family: Roboto, serif;
 }
 
 main {
@@ -139,7 +139,7 @@ select {
 }
 
 .way a {
-    font-family: Roboto;
+    font-family: Roboto, serif;
     color: #8e8e93;
     font-size: 16px;
     font-weight: 400;
@@ -147,7 +147,7 @@ select {
 }
 
 .way span {
-    font-family: Roboto;
+    font-family: Roboto, serif;
     color: #8e8e93;
     font-size: 16px;
     font-weight: 400;
@@ -163,7 +163,7 @@ select {
     width: 100%;
     margin: auto;
     justify-content: space-between;
-    font-family: Roboto;
+    font-family: Roboto, serif;
 }
 
 .content__tovarov {
@@ -248,7 +248,7 @@ select {
 }
 
 .dropdown__header {
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-size: 16px;
     font-weight: 500;
 }
@@ -270,7 +270,7 @@ select {
 }
 
 .checkbox_txt {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-weight: 400;
     font-size: 14px;
     color: #404040;
@@ -297,7 +297,7 @@ select {
 
 .tire {
     color: #8e8e93;
-    font-family: Roboto;
+    font-family: Roboto, serif;
 }
 
 .vibor__ceni {
@@ -306,7 +306,7 @@ select {
 }
 
 .vibor__ceni span {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     color: #404040;
     font-size: 14px;
     font-weight: 400;
@@ -340,9 +340,9 @@ select {
 }
 
 #readmore_btn {
-    font-family: Roboto;
+    font-family: Roboto, serif;
     background: none;
-    border: 0px;
+    border: 0;
     color: #3191d0;
     font-size: 14px;
     font-weight: 500;
@@ -359,7 +359,7 @@ select {
 }
 
 #more {
-    margin-top: 0px;
+    margin-top: 0;
     display: none;
     flex-direction: column;
 }
@@ -373,7 +373,7 @@ select {
     color: #fff;
     border-radius: 6px;
     border: none;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -393,7 +393,7 @@ select {
     color: #8e8e93;
     border-radius: 6px;
     border: 1px solid #8e8e93;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -416,7 +416,7 @@ select {
     width: 100%;
     height: 413px;
     border: none;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
 }
 
 .photo_tovara {
@@ -492,7 +492,7 @@ select {
     background-color: #f05757;
     border-radius: 6px;
     border: none;
-    background-image: url("../assets/catolog/cart.png") no-repeat;
+    background-image: url("../assets/catolog/cart.png");
 }
 
 .add_cart:hover {
@@ -500,8 +500,7 @@ select {
 }
 
 .like_item {
-    padding: 0;
-    padding-top: 4px;
+    padding: 4px 0 0;
     background: none;
     border: none;
     width: 30px;
@@ -539,10 +538,8 @@ select {
 #more_item_btn {
     margin-left: 20px;
     max-width: 835px;
-    width: 100%;
     max-height: 50px;
-    height: 100%;
-    font-family: Roboto;
+    font-family: Roboto, serif;
     font-weight: 500;
     font-size: 18px;
     color: #2d2d2d;
@@ -564,19 +561,18 @@ select {
 }
 
 #more_item {
-    margin-top: 0px;
+    margin-top: 0;
     display: none;
     flex-direction: column;
 }
 
 .num_str {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-weight: 400;
     font-size: 14px;
     color: #404040;
 
     margin-top: 20px;
-    display: flex;
     display: flex;
     width: 440px;
     height: 40px;
@@ -585,8 +581,6 @@ select {
 }
 
 .num_str span {
-    padding-left: 42px;
-    padding: 15px;
     display: flex;
     align-items: center;
 }
@@ -607,8 +601,6 @@ select {
     background: none;
     border: none;
 
-    width: 40px;
-    height: 40px;
 }
 
 .num_str button:hover {
@@ -677,13 +669,13 @@ header {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 30px;
 }
 
 .footer__container-2-text a,
 .footer__container-2-copy p {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -704,7 +696,7 @@ header {
 }
 
 .footer__container-social-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -767,13 +759,12 @@ header {
 
 .footer__tabs-body-item p,
 .footer__tabs-body-item-container_1 p {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    margin: 0;
-    margin-top: 16px;
+    margin: 16px 0 0;
     /* Dark Grey */
 
     color: #8e8e93;
@@ -787,7 +778,7 @@ header {
 }
 
 .footer__tabs-header-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -805,7 +796,7 @@ header {
 }
 
 .myCart_title {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -816,7 +807,7 @@ header {
 }
 
 .total_title {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -837,7 +828,7 @@ header {
 }
 
 .cardName {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -856,7 +847,7 @@ header {
 }
 
 .cardPrice {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -885,7 +876,7 @@ header {
     margin-bottom: 20px;
     display: block;
 
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -909,7 +900,7 @@ button {
     margin-bottom: 20px;
     line-height: 1.7;
 
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -978,7 +969,6 @@ button {
     background: #e8e8e9;
 
     align-items: center;
-    cursor: pointer;
 }
 
 .minusItem {
@@ -986,7 +976,7 @@ button {
     height: 17px;
     margin: -17px 5px 0 0;
     color: #1e2022;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-weight: 400;
     font-size: 28px;
 }
@@ -1009,7 +999,7 @@ button {
     height: 17px;
     margin-right: 5px;
     color: #1e2022;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-weight: 400;
 }
 
@@ -1022,7 +1012,7 @@ button {
 }
 
 .itemAmount {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1045,7 +1035,7 @@ button {
 }
 
 .accordCard__item label {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1068,7 +1058,7 @@ button {
 }
 
 .accordCard__item a {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1083,7 +1073,7 @@ button {
 
 .marginAccord a {
     margin-left: 25px;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -1098,7 +1088,7 @@ button {
 }
 
 .checkPrice__right {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1129,9 +1119,8 @@ button {
     margin: 0 6px;
     align-items: center;
     width: 180px;
-    width: 180px;
     height: 17px;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1145,7 +1134,7 @@ button {
 
 .second-line__text,
 .third-line__text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1225,7 +1214,7 @@ button {
     border: 1px solid #f05757;
     border-radius: 6px;
     color: #fff;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1244,7 +1233,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: px;
     border-radius: 6px;
     border: 1px solid #e8e8e9;
     width: 266px;
@@ -1267,7 +1255,7 @@ button {
 }
 
 .bold-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1282,7 +1270,7 @@ button {
 }
 
 .second-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1293,7 +1281,7 @@ button {
 }
 
 .third-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1319,7 +1307,6 @@ button {
 
 .tabs__header-item {
     cursor: pointer;
-    transition: 0.4s all;
     transition: border-color 0.4s ease-in-out;
     border-bottom: 1px solid #ffffff;
 }
@@ -1340,7 +1327,7 @@ button {
 }
 
 .prod_price p {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1355,14 +1342,14 @@ button {
 .dashed {
     position: absolute;
     width: 73px;
-    height: 0px;
+    height: 0;
     left: 40px;
     top: 22px;
     border: 1px dashed #8e8e93;
 }
 
 .amountSum {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -1457,7 +1444,7 @@ button {
     }
 
     .hr_underline {
-        margin-left: 0px;
+        margin-left: 0;
         max-width: 960px;
     }
 
@@ -1478,7 +1465,7 @@ button {
     }
 
     .footer_for_buyers {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .footer_no_name {
@@ -1486,7 +1473,7 @@ button {
     }
 
     .footer_social_seti {
-        margin-left: 0px;
+        margin-left: 0;
     }
 
     .under_footer_container {
@@ -1536,21 +1523,21 @@ button {
         position: absolute;
         top: 20px;
         left: 20px;
-        margin: 0px;
+        margin: 0;
     }
 
     .geolocation {
         position: absolute;
         top: 20px;
         left: 270px;
-        margin: 0px;
+        margin: 0;
     }
 
     .search {
         position: absolute;
         top: 75px;
         left: 20px;
-        margin: 0px;
+        margin: 0;
     }
 
     .search button {
@@ -1605,11 +1592,11 @@ button {
     .under_footer_container {
         display: flex;
         flex-direction: column;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .polir_konf {
-        margin-left: 0px;
+        margin-left: 0;
         display: flex;
         flex-direction: column;
         margin-bottom: 20px;

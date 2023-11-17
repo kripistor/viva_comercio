@@ -24,7 +24,7 @@ main {
 .header {
     background-color: #1e2022;
     height: 130px;
-    font-family: "Roboto";
+    font-family: Roboto, serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -41,7 +41,7 @@ main {
 }
 
 .header__menu-item {
-    margin: 15px 0px 15px 30px;
+    margin: 15px 0 15px 30px;
     list-style-type: none;
     display: inline-block;
 }
@@ -87,7 +87,7 @@ main {
     display: block;
     position: absolute;
     color: rgba(255, 255, 255, 0.664);
-    margin: 0px;
+    margin: 0;
     border: none;
     border-top: 1px solid;
     width: 100%;
@@ -110,7 +110,7 @@ main {
     list-style-type: none;
     width: 265px;
     min-height: 413px;
-    padding: 20px 0px;
+    padding: 20px 0;
     gap: 20px;
 }
 
@@ -153,7 +153,7 @@ main {
 }
 
 .cartt {
-    cursor: ponter;
+    cursor: pointer;
     background-color: var(--white-color);
     border: 1px solid var(--cherrydark-color);
     transition: background 0.5s ease-in-out, border 0.5s ease-in-out;
@@ -229,7 +229,7 @@ main {
     margin: 13px;
 
     border: 0;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -258,7 +258,7 @@ main {
     -webkit-appearance: none;
     appearance: none;
     padding: 15px 22px 15px 43px;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -275,9 +275,9 @@ main {
 }
 
 .form__select:hover {
-    -webkit-box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
-    -moz-box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
-    box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
+    -webkit-box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
+    -moz-box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
+    box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
 }
 
 .form__select:not([multiple]) {
@@ -329,7 +329,7 @@ hr {
 }
 
 .header__search-input::placeholder {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -352,9 +352,9 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .header__search:hover {
     border: 1px solid #8e8e93;
-    -webkit-box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
-    -moz-box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
-    box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
+    -webkit-box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
+    -moz-box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
+    box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
 }
 
 .header__search-icon {
@@ -382,7 +382,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .menu li a span {
-    margin: 0px 0px 0px 4px;
+    margin: 0 0 0 4px;
 }
 
 .menu {
@@ -391,8 +391,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .menu li img {
-    padding-top: 0px;
-    margin-right: 0px;
+    padding-top: 0;
+    margin-right: 0;
 }
 
 /* Основной блок */
@@ -461,13 +461,13 @@ header {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 30px;
 }
 
 .footer__container-2-text a,
 .footer__container-2-copy p {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -488,7 +488,7 @@ header {
 }
 
 .footer__container-social-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -551,13 +551,12 @@ header {
 
 .footer__tabs-body-item p,
 .footer__tabs-body-item-container_1 p {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    margin: 0;
-    margin-top: 16px;
+    margin: 16px 0 0;
     /* Dark Grey */
 
     color: #8e8e93;
@@ -571,7 +570,7 @@ header {
 }
 
 .footer__tabs-header-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -589,7 +588,7 @@ header {
 }
 
 .myCart_title {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -600,7 +599,7 @@ header {
 }
 
 .total_title {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -621,7 +620,7 @@ header {
 }
 
 .cardName {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -636,7 +635,7 @@ header {
 }
 
 .cardPrice {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -663,7 +662,7 @@ header {
     margin-bottom: 20px;
     display: block;
 
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -687,7 +686,7 @@ button {
     margin-bottom: 20px;
     line-height: 1.7;
 
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -756,7 +755,6 @@ button {
     background: #e8e8e9;
 
     align-items: center;
-    cursor: pointer;
 }
 
 .minusItem {
@@ -764,7 +762,7 @@ button {
     height: 17px;
     margin: -17px 5px 0 0;
     color: #1e2022;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-weight: 400;
     font-size: 28px;
 }
@@ -787,7 +785,7 @@ button {
     height: 17px;
     margin-right: 5px;
     color: #1e2022;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-weight: 400;
 }
 
@@ -800,7 +798,7 @@ button {
 }
 
 .itemAmount {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -823,7 +821,7 @@ button {
 }
 
 .accordCard__item label {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -846,7 +844,7 @@ button {
 }
 
 .accordCard__item a {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -861,7 +859,7 @@ button {
 
 .marginAccord a {
     margin-left: 25px;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -876,7 +874,7 @@ button {
 }
 
 .checkPrice__right {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -912,9 +910,8 @@ button {
     margin: 0 6px;
     align-items: center;
     width: 180px;
-    width: 180px;
     height: 17px;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -928,7 +925,7 @@ button {
 
 .second-line__text,
 .third-line__text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1008,7 +1005,7 @@ button {
     border: 1px solid #f05757;
     border-radius: 6px;
     color: #fff;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1027,7 +1024,6 @@ button {
     display: flex;
     align-items: center;
     justify-content: start;
-    padding: px;
     border-radius: 6px;
     border: 1px solid #e8e8e9;
     width: 266px;
@@ -1050,7 +1046,7 @@ button {
 }
 
 .bold-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -1065,7 +1061,7 @@ button {
 }
 
 .second-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1076,7 +1072,7 @@ button {
 }
 
 .third-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1102,7 +1098,6 @@ button {
 
 .tabs__header-item {
     cursor: pointer;
-    transition: 0.4s all;
     transition: border-color 0.4s ease-in-out;
     border-bottom: 1px solid #ffffff;
 }
@@ -1123,7 +1118,7 @@ button {
 }
 
 .prod_price p {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -1138,14 +1133,14 @@ button {
 .dashed {
     position: absolute;
     width: 73px;
-    height: 0px;
+    height: 0;
     left: 40px;
     top: 22px;
     border: 1px dashed #8e8e93;
 }
 
 .amountSum {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -1243,7 +1238,7 @@ button {
     }
 
     .header {
-        padding: 20px 20px 0px 20px;
+        padding: 20px 20px 0 20px;
     }
 
     footer {
@@ -1297,7 +1292,7 @@ button {
 
     .header {
         width: 90%;
-        padding: 5% 5% 0% 5%;
+        padding: 5% 5% 0 5%;
     }
 
     .header__search-input {
@@ -1313,7 +1308,7 @@ button {
         width: 70px;
         flex: 0 1 50%;
         margin-bottom: 20px;
-        padding-left: 0%;
+        padding-left: 0;
         justify-content: flex-end;
     }
 
@@ -1329,7 +1324,7 @@ button {
 
     .Main-prod__text-js {
         margin-top: 60px;
-        margin-bottom: 0px;
+        margin-bottom: 0;
     }
 
     .Main-prod__text {
@@ -1367,7 +1362,7 @@ button {
 
         min-width: 0;
         flex-direction: row;
-        padding-left: 0px;
+        padding-left: 0;
         gap: 0;
         flex-shrink: 1;
     }
@@ -1406,8 +1401,7 @@ button {
 
     .logo__container {
         flex: 0 1 50%;
-        margin: 0;
-        margin-bottom: 20px;
+        margin: 0 0 20px;
     }
 
     .header__select {

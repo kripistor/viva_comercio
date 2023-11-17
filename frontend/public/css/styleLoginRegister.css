@@ -12,7 +12,7 @@
 .header {
     background-color: #1e2022;
     height: 130px;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -39,7 +39,7 @@
     background-color: #fff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .login-register-form h2 {
@@ -99,7 +99,7 @@
 
 
 .header__menu-item {
-    margin: 15px 0px 15px 0px;
+    margin: 15px 0 15px 0;
     list-style-type: none;
     display: inline-block;
 }
@@ -164,7 +164,7 @@
     margin: 13px;
 
     border: 0;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -194,7 +194,7 @@
     -webkit-appearance: none;
     appearance: none;
     padding: 15px 22px 15px 43px;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -211,9 +211,9 @@
 }
 
 .form__select:hover {
-    -webkit-box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
-    -moz-box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
-    box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
+    -webkit-box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
+    -moz-box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
+    box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
 }
 
 .form__select:not([multiple]) {
@@ -265,7 +265,7 @@ hr {
 }
 
 .header__search-input::placeholder {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -288,9 +288,9 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .header__search:hover {
     border: 1px solid #8e8e93;
-    -webkit-box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
-    -moz-box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
-    box-shadow: 0px 0px 13px 3px rgba(255, 255, 255, 0.27);
+    -webkit-box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
+    -moz-box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
+    box-shadow: 0 0 13px 3px rgba(255, 255, 255, 0.27);
 }
 
 .header__search-icon {
@@ -318,7 +318,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .menu li a span {
-    margin: 0px 0px 0px 4px;
+    margin: 0 0 0 4px;
 }
 
 .menu {
@@ -327,8 +327,8 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .menu li img {
-    padding-top: 0px;
-    margin-right: 0px;
+    padding-top: 0;
+    margin-right: 0;
 }
 
 .header__navigation-geo {
@@ -364,7 +364,7 @@ header {
 }
 
 .compare__header-title p {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -377,7 +377,7 @@ header {
 }
 
 .compare__header-title span {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -399,10 +399,9 @@ header {
 
 .tabs__header-item {
     cursor: pointer;
-    transition: 0.4s all;
     transition: border-color 0.4s ease-in-out;
     border-bottom: 1px solid #ffffff;
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -420,7 +419,7 @@ header {
 }
 
 .tabs__header-item.active {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -485,7 +484,7 @@ header {
     content: "";
     display: inline-block;
     width: 6px;
-    height: 4.5px;
+    height: 5px;
     background-image: url("../assets/compare/checkbox.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -512,7 +511,7 @@ header {
 }
 
 .checkbox label {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -534,7 +533,7 @@ header {
 }
 
 .container_flex-gap a {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -552,7 +551,7 @@ header {
 }
 
 .text-gray {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -572,7 +571,7 @@ header {
 }
 
 .tabs-body__flex-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -603,13 +602,12 @@ header {
 
 .footer__tabs-body-item p,
 .footer__tabs-body-item-container_1 p {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    margin: 0;
-    margin-top: 16px;
+    margin: 16px 0 0;
     /* Dark Grey */
 
     color: #8e8e93;
@@ -623,7 +621,7 @@ header {
 }
 
 .footer__tabs-header-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -687,13 +685,13 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0;
     gap: 30px;
 }
 
 .footer__container-2-text a,
 .footer__container-2-copy p {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -714,7 +712,7 @@ footer {
 }
 
 .footer__container-social-text {
-    font-family: "Roboto";
+    font-family: "Roboto", serif;
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -895,17 +893,17 @@ footer {
     .footer__tabs-header,
     .footer__container-social-text {
         color: #ffffff;
-        font-family: Roboto;
+        font-family: Roboto, serif;
         font-size: 16px;
         font-weight: 500;
         line-height: 19px;
-        letter-spacing: 0em;
+        letter-spacing: 0;
         text-align: left;
         border-top: 1px solid #404040;
     }
 
     .footer__tabs-body {
-        font-family: "Roboto";
+        font-family: "Roboto", serif;
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -969,10 +967,9 @@ footer {
         width: 70px;
         flex: 0 1 50%;
         margin: 0;
-        padding-left: 0%;
+        padding-left: 0;
         align-items: center;
         justify-content: flex-end;
-        flex: 0 1 50%;
     }
 
     .geo2.geo img {
@@ -988,9 +985,8 @@ footer {
 
     .header__search {
         flex: 0 1 100%;
-        margin: 0;
         justify-content: space-between;
-        margin-bottom: 20px;
+        margin: 0 0 20px;
     }
 
     .header__search img {
